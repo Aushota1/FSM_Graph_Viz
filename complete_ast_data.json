@@ -1,0 +1,397 @@
+{
+  "type": "CompleteAST",
+  "parser_used": "pyslang_enhanced",
+  "modules": [
+    {
+      "name": "detect_4_bit_sequence_using_fsm",
+      "type": "Module",
+      "parameters": [],
+      "type_parameters": [],
+      "ports": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "width": ""
+        },
+        {
+          "name": "rst",
+          "direction": "input",
+          "width": ""
+        },
+        {
+          "name": "a",
+          "direction": "input",
+          "width": ""
+        },
+        {
+          "name": "detected",
+          "direction": "output",
+          "width": ""
+        }
+      ],
+      "signals": [
+        {
+          "name": "IDLE",
+          "type": "var",
+          "kind": "var",
+          "width": "[2:0]"
+        },
+        {
+          "name": "F1",
+          "type": "var",
+          "kind": "var",
+          "width": "[2:0]"
+        },
+        {
+          "name": "F0",
+          "type": "var",
+          "kind": "var",
+          "width": "[2:0]"
+        },
+        {
+          "name": "S1",
+          "type": "var",
+          "kind": "var",
+          "width": "[2:0]"
+        },
+        {
+          "name": "S0",
+          "type": "var",
+          "kind": "var",
+          "width": "[2:0]"
+        },
+        {
+          "name": "fsm_state",
+          "type": "var",
+          "kind": "var",
+          "width": "[2:0]"
+        },
+        {
+          "name": "next_state",
+          "type": "var",
+          "kind": "var",
+          "width": ""
+        },
+        {
+          "name": "state",
+          "type": "var",
+          "kind": "var",
+          "width": ""
+        }
+      ],
+      "nets": [],
+      "instances": [],
+      "always_blocks": [
+        {
+          "sensitivity": "posedge clk",
+          "assignments": [
+            {
+              "left": "state",
+              "right": "IDLE",
+              "line": 0,
+              "op": "<="
+            },
+            {
+              "left": "state",
+              "right": "next_state",
+              "line": 0,
+              "op": "<="
+            }
+          ]
+        },
+        {
+          "sensitivity": "@*",
+          "assignments": []
+        }
+      ],
+      "initial_blocks": [],
+      "assigns": [
+        {
+          "left": "detected",
+          "right": "(state==S0)",
+          "line": 0,
+          "op": "="
+        }
+      ],
+      "generate": [],
+      "typedefs": []
+    },
+    {
+      "name": "detect_6_bit_sequence_using_fsm",
+      "type": "Module",
+      "parameters": [],
+      "type_parameters": [],
+      "ports": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "width": ""
+        },
+        {
+          "name": "rst",
+          "direction": "input",
+          "width": ""
+        },
+        {
+          "name": "a",
+          "direction": "input",
+          "width": ""
+        },
+        {
+          "name": "detected",
+          "direction": "output",
+          "width": ""
+        }
+      ],
+      "signals": [],
+      "nets": [],
+      "instances": [],
+      "always_blocks": [],
+      "initial_blocks": [],
+      "assigns": [],
+      "generate": [],
+      "typedefs": []
+    }
+  ],
+  "systemverilog_elements": {
+    "interfaces": [],
+    "packages": [],
+    "classes": [],
+    "typedefs": [],
+    "structs": [],
+    "enums": [
+      {
+        "name": "IDLE",
+        "type": "Enum",
+        "values": ""
+      }
+    ],
+    "programs": [],
+    "checkers": [],
+    "configs": []
+  },
+  "connections": [],
+  "metadata": {
+    "total_modules": 2,
+    "interfaces_count": 0,
+    "packages_count": 0,
+    "classes_count": 0,
+    "typedefs_count": 0,
+    "total_modules_enhanced": 2,
+    "total_interfaces": 0,
+    "total_programs": 0,
+    "total_classes": 0,
+    "total_packages": 0,
+    "total_typedefs": 0,
+    "total_structs": 0,
+    "total_enums": 0,
+    "total_functions": 0,
+    "total_tasks": 0,
+    "pyslang_analysis": true,
+    "analysis_timestamp": "complete_analysis_pyslang_v1.0"
+  },
+  "version": "1.0",
+  "typedefs": [],
+  "structs": [],
+  "enums": [],
+  "unions": [],
+  "enhanced_analysis": {
+    "data_types": {
+      "typedefs": [],
+      "structs": [],
+      "enums": [],
+      "unions": []
+    },
+    "behavioral_elements": {
+      "functions": [],
+      "tasks": []
+    },
+    "parameters": {
+      "parameters": [],
+      "defparams": [],
+      "preprocessor_defines": []
+    },
+    "connection_graph": {
+      "nodes": [
+        {
+          "id": "detect_4_bit_sequence_using_fsm",
+          "type": "module",
+          "ports": [
+            {
+              "type": "Port",
+              "direction": "input",
+              "name": "clk",
+              "width": ""
+            },
+            {
+              "type": "Port",
+              "direction": "input",
+              "name": "rst",
+              "width": ""
+            },
+            {
+              "type": "Port",
+              "direction": "input",
+              "name": "a",
+              "width": ""
+            },
+            {
+              "type": "Port",
+              "direction": "output",
+              "name": "detected",
+              "width": ""
+            }
+          ],
+          "instances": [],
+          "enhanced": false
+        },
+        {
+          "id": "detect_6_bit_sequence_using_fsm",
+          "type": "module",
+          "ports": [
+            {
+              "type": "Port",
+              "direction": "input",
+              "name": "clk",
+              "width": ""
+            },
+            {
+              "type": "Port",
+              "direction": "input",
+              "name": "rst",
+              "width": ""
+            },
+            {
+              "type": "Port",
+              "direction": "input",
+              "name": "a",
+              "width": ""
+            },
+            {
+              "type": "Port",
+              "direction": "output",
+              "name": "detected",
+              "width": ""
+            }
+          ],
+          "instances": [],
+          "enhanced": false
+        }
+      ],
+      "edges": [],
+      "hierarchies": [],
+      "top_level_modules": [],
+      "pyslang_enhanced": true
+    },
+    "hierarchies": [
+      {
+        "name": "detect_4_bit_sequence_using_fsm",
+        "type": "module",
+        "children": [],
+        "level": 0,
+        "instance_count": 0
+      },
+      {
+        "name": "detect_6_bit_sequence_using_fsm",
+        "type": "module",
+        "children": [],
+        "level": 0,
+        "instance_count": 0
+      }
+    ],
+    "timing_analysis": {
+      "clock_domains": [
+        {
+          "module": "detect_4_bit_sequence_using_fsm",
+          "clocks": [
+            "clock_signal"
+          ],
+          "always_blocks_count": 2,
+          "type": "synchronous",
+          "enhanced": false
+        }
+      ],
+      "reset_analysis": [
+        {
+          "module": "detect_4_bit_sequence_using_fsm",
+          "reset_signals": [
+            "rst"
+          ],
+          "reset_type": "asynchronous",
+          "enhanced": false
+        },
+        {
+          "module": "detect_6_bit_sequence_using_fsm",
+          "reset_signals": [
+            "rst"
+          ],
+          "reset_type": "asynchronous",
+          "enhanced": false
+        }
+      ],
+      "timing_info": {
+        "synchronous_modules": 0,
+        "combinational_modules": 0,
+        "module_timing": [
+          {
+            "module": "detect_4_bit_sequence_using_fsm",
+            "type": "mixed",
+            "always_blocks": 2,
+            "enhanced": false
+          },
+          {
+            "module": "detect_6_bit_sequence_using_fsm",
+            "type": "unknown",
+            "always_blocks": 0,
+            "enhanced": false
+          }
+        ],
+        "mixed_modules": 1
+      },
+      "assignment_analysis": {
+        "continuous_assignments": 1,
+        "modules_with_assignments": [
+          {
+            "module": "detect_4_bit_sequence_using_fsm",
+            "continuous": 1,
+            "total": 1,
+            "enhanced": false
+          }
+        ]
+      }
+    },
+    "fsm": {
+      "modules": [
+        {
+          "module": "detect_4_bit_sequence_using_fsm",
+          "state_signals": [
+            {
+              "name": "fsm_state",
+              "width": "[2:0]",
+              "type": "var"
+            },
+            {
+              "name": "next_state",
+              "width": "",
+              "type": "var"
+            },
+            {
+              "name": "state",
+              "width": "",
+              "type": "var"
+            }
+          ],
+          "enum_states": [],
+          "has_fsm": false
+        },
+        {
+          "module": "detect_6_bit_sequence_using_fsm",
+          "state_signals": [],
+          "enum_states": [],
+          "has_fsm": false
+        }
+      ],
+      "total_modules_with_fsm_like": 0
+    }
+  }
+}
