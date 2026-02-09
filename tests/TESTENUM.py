@@ -1,5 +1,5 @@
-from cst_service import CSTService
-from FindeENUM import detect_enum_variables_from_cst
+from AST_CST.cst_service import CSTService
+from FSM_core.FindeENUM import detect_enum_variables_from_cst
 
 code = """
 package bus_defs;

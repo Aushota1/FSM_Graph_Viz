@@ -52,15 +52,15 @@ fsm_graph_builder.py
 from typing import Any, Dict, List, Tuple, Optional
 import re
 
-from cst_service import (
+from AST_CST.cst_service import (
     kind,
     children,
     collect_identifiers_inline,
     text_of,
     first_identifier_text,
 )
-from fsm_enum_candidates_cst import detect_fsm_enum_candidates_from_cst
-from FindeENUM import detect_enum_variables_from_cst
+from .fsm_enum_candidates_cst import detect_fsm_enum_candidates_from_cst
+from .FindeENUM import detect_enum_variables_from_cst
 
 
 # ============================================================

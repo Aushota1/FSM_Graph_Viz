@@ -33,7 +33,7 @@ enum_detector_cst.py
 """
 
 from typing import Any, Dict, List
-from cst_service import (
+from AST_CST.cst_service import (
     kind,
     children,
     find_all,

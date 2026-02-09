@@ -24,14 +24,14 @@ fsm_enum_candidates_cst.py
 
 from typing import Any, Dict, List
 
-from cst_service import (
+from AST_CST.cst_service import (
     kind,
     children,
     find_all,
     collect_identifiers_inline,
     text_of,
 )
-from FindeENUM import detect_enum_variables_from_cst
+from .FindeENUM import detect_enum_variables_from_cst
 
 
 def detect_fsm_enum_candidates_from_cst(tree: Any) -> List[Dict[str, Any]]:

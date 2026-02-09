@@ -36,8 +36,8 @@ from typing import Any, Dict, List, Optional
 import tkinter as tk
 from tkinter import ttk, filedialog, messagebox
 
-from cst_service import CSTService
-from fsm_graph_builder import build_fsm_graphs_from_cst
+from AST_CST.cst_service import CSTService
+from .fsm_graph_builder import build_fsm_graphs_from_cst
 
 
 # ============================================================

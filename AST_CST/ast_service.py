@@ -6,7 +6,7 @@
 """
 
 from typing import Any, Dict, List, Optional
-from cst_service import CSTService, find_first, find_all, first_identifier_text, collect_identifiers_inline, range_width_text
+from .cst_service import CSTService, find_first, find_all, first_identifier_text, collect_identifiers_inline, range_width_text
 
 class ASTService:
     """Сервис для построения Abstract Syntax Tree"""

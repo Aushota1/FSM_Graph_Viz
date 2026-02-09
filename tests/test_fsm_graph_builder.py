@@ -17,8 +17,8 @@ test_fsm_graph_builder.py
 from typing import Any, Dict, List, Optional, Tuple
 from pprint import pprint
 
-from cst_service import CSTService
-from fsm_graph_builder import build_fsm_graphs_from_cst
+from AST_CST.cst_service import CSTService
+from FSM_core.fsm_graph_builder import build_fsm_graphs_from_cst
 
 
 # ==============================

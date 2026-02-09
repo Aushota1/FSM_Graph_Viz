@@ -30,7 +30,7 @@ import json
 from pathlib import Path
 
 # Импортируем существующий AST сервис
-from ast_service import ASTService, print_unified_ast
+from AST_CST.ast_service import ASTService, print_unified_ast
 
 
 @dataclass
